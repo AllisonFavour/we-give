@@ -3,7 +3,7 @@ import HamburgerMenu from '../assets/icons/pajamas_hamburger.png';
 
 export default function NavBar() {
   return (
-    <nav className='fixed w-full bg-white'>
+    <nav className='fixed w-full bg-white top-0'>
         <div className='flex justify-between p-4'>
             <span className='font-bold text-lg'>WeGive</span>
 
