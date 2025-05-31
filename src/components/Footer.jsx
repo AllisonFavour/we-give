@@ -12,21 +12,21 @@ export default function Footer() {
         <Subscribe />
 
         <div className="bg-gray-800 text-white px-8 py-8">
-          <div className="">
-            <div>
-              <h3 className="text-xl font-bold">WeGive</h3>
+          <div className="flex flex-col  md:flex-row md:justify-around md:items-stretch">
+            <div className="py-4">
+              <h3 className="text-xl font-bold mb-4">WeGive</h3>
 
-              <p className="text-sm my-6">
+              <p className="text-sm md:max-w-44">
                 We are a nonprofit organization dedicated to changing lives
                 through compassion and generosity. Every donation helps us
                 provide food, education, healthcare, and hope to those in need.
               </p>
             </div>
 
-            <div>
-              <h3 className="text-xl font-bold mt-10">Company</h3>
+            <div className="py-4">
+              <h3 className="text-xl font-bold mb-4">Company</h3>
 
-              <ul className="my-4">
+              <ul className="">
                 <li className="mb-2">
                   <a href="#" className="text-sm">
                     How it works
@@ -50,10 +50,10 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-xl font-bold mt-10">Resources</h3>
+            <div className="py-4">
+              <h3 className="text-xl font-bold mb-4">Resources</h3>
 
-              <ul className="my-4">
+              <ul className="">
                 <li className="mb-2">
                   <a href="#" className="text-sm">
                     Blog
@@ -72,10 +72,10 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div>
-              <h3 className="text-lg font-bold mt-10">Support</h3>
+            <div className="py-4">
+              <h3 className="text-lg font-bold mb-4">Support</h3>
 
-              <ul className="my-4">
+              <ul className="">
                 <li className="mb-2">
                   <a href="#" className="text-sm">
                     FAQs
@@ -95,14 +95,14 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="py-8 flex flex-col gap-4">
-            <div>trilCodes&copy; {new Date().getFullYear()} WeGive</div>
+          <div className="py-8 px-4 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+            <div className="text-lg">trilCodes &copy; {new Date().getFullYear()} WeGive</div>
 
-            <div className="flex items-center gap-1">
-              <img src={InstagramIcon} alt="Instagram icon" />
-              <img src={WhatsappIcon} alt="Whatsapp icon" />
-              <img src={XIcon} alt="X/Twitter icon" />
-              <img src={FacebookIcon} alt="Facebook icon" />
+            <div className="flex items-center gap-4">
+              <img src={InstagramIcon} alt="Instagram icon"  />
+              <img src={WhatsappIcon} alt="Whatsapp icon"  />
+              <img src={XIcon} alt="X/Twitter icon"  />
+              <img src={FacebookIcon} alt="Facebook icon"  />
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ function App() {
       <NavBar />
       {/* <Test /> */}
 
-      <div className="min-h-screen">
+      <div className="min-h-screen lg:px-10">
         <Main />
         <About />
         <Services />

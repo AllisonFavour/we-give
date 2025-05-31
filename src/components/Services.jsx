@@ -9,8 +9,8 @@ export default function Services() {
         <h2 className="text-center">Our Services</h2>
         <h3 className="text-center">What we do</h3>
 
-        <div className="px-4 py-6 my-6 bg-white rounded-lg">
-          <div className="w-30 h-30 rounded-full bg-yellow-300 flex items-center justify-center shrink-0">
+        <div className="px-4 py-6 pt-24 my-6 bg-white rounded-lg relative">
+          <div className="w-24 h-24 rounded-full bg-yellow-300 flex items-center justify-center shrink-0 absolute -top-3 -right-3.5">
             <img
               src={FoodIcon}
               alt="Food Icon"
@@ -25,8 +25,8 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="px-4 py-6 my-6 bg-white rounded-lg">
-          <div className="w-30 h-30 rounded-full bg-yellow-300 flex items-center justify-center shrink-0">
+        <div className="px-4 py-6 my-16 pt-24 bg-white rounded-lg relative">
+          <div className="w-24 h-24 rounded-full bg-yellow-300 flex items-center justify-center shrink-0 absolute -top-3 -right-3.5">
             <img
               src={BookIcon}
               alt="Book Icon"
@@ -41,8 +41,8 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="px-4 py-6 my-6 bg-white rounded-lg">
-          <div className="w-30 h-30 rounded-full bg-yellow-300 flex items-center justify-center shrink-0">
+        <div className="px-4 py-6 pt-24 my-6 bg-white rounded-lg relative">
+          <div className="w-24 h-24 rounded-full bg-yellow-300 flex items-center justify-center shrink-0 absolute -top-3 -right-3.5">
             <img
               src={HospitalIcon}
               alt="Hospital Icon"
