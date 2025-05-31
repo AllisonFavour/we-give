@@ -8,11 +8,13 @@ import Events from "./components/Events.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import Faqs from "./components/Faqs.jsx";
 import Footer from "./components/Footer.jsx";
+import Test from "./components/test.jsx";
 
 function App() {
   return (
     <>
       <NavBar />
+      {/* <Test /> */}
 
       <div className="min-h-screen">
         <Main />

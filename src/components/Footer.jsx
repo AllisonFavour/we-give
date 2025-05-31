@@ -12,72 +12,92 @@ export default function Footer() {
         <Subscribe />
 
         <div className="bg-gray-800 text-white px-8 py-8">
-          <div>
-            <h3>WeGive</h3>
+          <div className="">
+            <div>
+              <h3 className="text-xl font-bold">WeGive</h3>
 
-            <p>
-              We are a nonprofit organization dedicated to changing lives
-              through compassion and generosity. Every donation helps us provide
-              food, education, healthcare, and hope to those in need.
-            </p>
+              <p className="text-sm my-6">
+                We are a nonprofit organization dedicated to changing lives
+                through compassion and generosity. Every donation helps us
+                provide food, education, healthcare, and hope to those in need.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mt-10">Company</h3>
+
+              <ul className="my-4">
+                <li className="mb-2">
+                  <a href="#" className="text-sm">
+                    How it works
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-sm">
+                    About us
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-sm">
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm">
+                    Contact us
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mt-10">Resources</h3>
+
+              <ul className="my-4">
+                <li className="mb-2">
+                  <a href="#" className="text-sm">
+                    Blog
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-sm">
+                    Terms and conditons
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="text-sm">
+                    Privacy policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-bold mt-10">Support</h3>
+
+              <ul className="my-4">
+                <li className="mb-2">
+                  <a href="#" className="text-sm">
+                    FAQs
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a href="#" className="text-sm">
+                    Legal information
+                  </a>
+                </li>
+                <li className="">
+                  <a href="#" className="text-sm">
+                    Help center
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <h3>Company</h3>
+          <div className="py-8 flex flex-col gap-4">
+            <div>trilCodes&copy; {new Date().getFullYear()} WeGive</div>
 
-            <ul>
-              <li>
-                <a href="#">How it works</a>
-              </li>
-              <li>
-                <a href="#">About us</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Contact us</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Resources</h3>
-
-            <ul>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Terms and conditons</a>
-              </li>
-              <li>
-                <a href="#">Privacy policy</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Support</h3>
-
-            <ul>
-              <li>
-                <a href="#">FAQs</a>
-              </li>
-              <li>
-                <a href="#">Legal information</a>
-              </li>
-              <li>
-                <a href="#">Help center</a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            {/* <div>
-                trilCodes&copy; {Date.now().getFullYear()} WeGive
-            </div> */}
-            <div>trilCodes&copy; 2025 WeGive</div>
             <div className="flex items-center gap-1">
               <img src={InstagramIcon} alt="Instagram icon" />
               <img src={WhatsappIcon} alt="Whatsapp icon" />

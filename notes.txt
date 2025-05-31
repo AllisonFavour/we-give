@@ -1,0 +1,8 @@
+best practices
+
+store your images and icons in assets folder inside the src folder
+
+use svg for icons
+use jpg for photos and background images if file size matters
+use png for images needing transparency
+

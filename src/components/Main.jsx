@@ -7,7 +7,7 @@ import CalendarIcon from "../assets/icons/calendar.png";
 export default function Main() {
   return (
     <>
-      <main className="px-4 py-6 mt-12">
+      <main className="px-4 py-6 mt-20 md:mt-28">
         <div>
           <img
             className="rounded-lg"
