@@ -1,9 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
-
-
+@import "swiper/css";               /* ✅ Swiper base styles */
+@import "swiper/css/pagination";   /* ✅ Swiper pagination styles */
 
 /* ✅ Your global styles */
+/* * {
+  outline: 1px solid red;
+} */
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
+
+/* @layer components {
+  .swiper-pagination-bullet {
+    @apply bg-green-600 opacity-50 w-2 h-2 mx-1 rounded-full;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-green-900 opacity-100;
+  }
+} */

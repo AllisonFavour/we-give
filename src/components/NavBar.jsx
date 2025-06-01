@@ -16,7 +16,7 @@ export default function NavBar() {
         {/* <div className="hidden md:flex justify-between items-center text-black"> */}
         <ul className="hidden md:flex items-center justify-between md:space-x-3 lg:space-x-6">
           <li>
-            <a href="#" className="text-sm">
+            <a href="/" className="text-sm">
               Home
             </a>
           </li>

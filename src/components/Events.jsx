@@ -1,167 +1,96 @@
-import ChildInHospital from "../assets/images/children3.jpg";
+import Children6 from "../assets/images/children6.jpg";
+import Children7 from "../assets/images/children7.jpg";
+import Children8 from "../assets/images/children8.jpg";
+import Children9 from "../assets/images/children9.jpg";
+import EventCard from "./EventCard";
+
+const eventDetails = [
+  {
+    id: 1,
+    image: Children6,
+    time: "10:00",
+    location: "Lagos, Nigeria",
+    pText: "Back to School Giveaway",
+  },
+  {
+    id: 2,
+    image: Children7,
+    time: "16:00",
+    location: "Abuja, Nigeria",
+    pText: "Community Walk for Hope",
+  },
+  {
+    id: 3,
+    image: Children8,
+    time: "09:00",
+    location: "Lagos, Nigeria",
+    pText: "Health and Wellness Awareness Outreach",
+  },
+  {
+    id: 4,
+    image: Children9,
+    time: "12:00",
+    location: "Akwa Ibom, Nigeria",
+    pText: "Sponsor a Child Day",
+  },
+];
 
 export default function Events() {
   return (
     <>
       <section className="px-6 bg-white">
         <div className="text-center py-4">
-          <span className="block">Get Involved</span>
-          <h2 className="">Events</h2>
-          <h3 className="">Ready to join our Latest Events?</h3>
-          <p>
-            Are you ready to make a lasting impact? Our upcoming events are more
-            than just opportunities to get involved—they are chances to help
-            shape the future.
-          </p>
+          <span className="block text-center text-neutral-500 mb-1">
+            Get Involved
+          </span>
+          <h2 className="text-center text-2xl font-bold text-green-950 mb-4">
+            Events
+          </h2>
+          {/* <h3 className="text-center text-lg font-bold text-green-950 mb-6">
+            Ready to join our Latest Events?
+          </h3> */}
         </div>
 
-        <div className="bg-white grid grid-cols-2 md:grid-cols-4 mt-4 rounded-lg gap-4">
-          <div className="mt-6 bg-white rounded-lg">
-            <img
-              src={ChildInHospital}
-              alt="Child in Hospital"
-              className="rounded-tr-lg rounded-tl-lg"
-            />
+        <div className="flex flex-col items-center justify-center md:flex-row md:items-start md:justify-stretch gap-4">
+          <div className="text-center md:text-left md:flex-1 md:pt-10">
+            <h3 className="text-center md:text-left text-lg md:text-2xl font-bold text-green-950 mb-6">
+              Ready to join our Latest Events?
+            </h3>
 
-            <div className="bg-gray-200 px-4 py-6 rounded-br-lg rounded-bl-lg">
-              <div className="flex justify-between">
-                <div>
-                  <div>
-                    <img src="/clock-icon.svg" alt="Clock Icon" />\
-                    <span>10:00am</span>
-                  </div>
-                </div>
+            <p className="text-base">
+              Are you ready to make a lasting impact? Our upcoming events are
+              more than just opportunities to get involved—they are chances to
+              help shape the future.
+            </p>
 
-                <div>
-                  <div>
-                    <img src="/location-icon.svg" alt="Location Icon" />
-                    <span>Lagos, Nigeria</span>
-                  </div>
-                </div>
-              </div>
+            <p className="hidden text-base md:block md:my-10">
+              Whether you're volunteering your time, participating in exciting
+              activities, or making a generous donation, your support directly
+              contributes to changing lives. Together, we can raise awareness,
+              offer resources, and create lasting change for those in need.
+            </p>
 
-              <p>Back to School Giveaway</p>
-
-              <div className="flex">
-                <a href="#">Read More</a>
-                <img
-                  src="/vector-arrow-right-black.svg"
-                  alt="An icon of an arrow pointing right"
-                />
-              </div>
+            <div className="hidden md:block text-center mt-4 md:text-left">
+              <button className="bg-green-700 text-white text-lg px-10 py-4 mt-4 rounded-sm">
+                Discover now
+              </button>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg">
-            <img
-              src={ChildInHospital}
-              alt="Child in Hospital"
-              className="rounded-tr-lg rounded-tl-lg"
-            />
-
-            <div className="bg-gray-200 px-4 py-6 rounded-br-lg rounded-bl-lg">
-              <div className="flex justify-between">
-                <div>
-                  <div>
-                    <img src="/clock-icon.svg" alt="Clock Icon" />\
-                    <span>10:00am</span>
-                  </div>
-                </div>
-
-                <div>
-                  <div>
-                    <img src="/location-icon.svg" alt="Location Icon" />
-                    <span>Lagos, Nigeria</span>
-                  </div>
-                </div>
-              </div>
-
-              <p>Community Walk for Hope</p>
-
-              <div className="flex">
-                <a href="#">Read More</a>
-                <img
-                  src="/vector-arrow-right-black.svg"
-                  alt="An icon of an arrow pointing right"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-6 bg-white rounded-lg">
-            <img
-              src={ChildInHospital}
-              alt="Child in Hospital"
-              className="rounded-tr-lg rounded-tl-lg"
-            />
-
-            <div className="bg-gray-200 px-4 py-6 rounded-br-lg rounded-bl-lg">
-              <div className="flex justify-between">
-                <div>
-                  <div>
-                    <img src="/clock-icon.svg" alt="Clock Icon" />\
-                    <span>10:00am</span>
-                  </div>
-                </div>
-
-                <div>
-                  <div>
-                    <img src="/location-icon.svg" alt="Location Icon" />
-                    <span>Lagos, Nigeria</span>
-                  </div>
-                </div>
-              </div>
-
-              <p>Health and Wellness Awareness Outreach</p>
-
-              <div className="flex">
-                <a href="#">Read More</a>
-                <img
-                  src="/vector-arrow-right-black.svg"
-                  alt="An icon of an arrow pointing right"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg">
-            <img
-              src={ChildInHospital}
-              alt="Child in Hospital"
-              className="rounded-tr-lg rounded-tl-lg"
-            />
-
-            <div className="bg-gray-200 px-4 py-6 rounded-br-lg rounded-bl-lg">
-              <div className="flex justify-between">
-                <div>
-                  <div>
-                    <img src="/clock-icon.svg" alt="Clock Icon" />\
-                    <span>10:00am</span>
-                  </div>
-                </div>
-
-                <div>
-                  <div>
-                    <img src="/location-icon.svg" alt="Location Icon" />
-                    <span>Lagos, Nigeria</span>
-                  </div>
-                </div>
-              </div>
-
-              <p>Sponsor a Child Day</p>
-
-              <div className="flex">
-                <a href="#">Read More</a>
-                <img
-                  src="/vector-arrow-right-black.svg"
-                  alt="An icon of an arrow pointing right"
-                />
-              </div>
-            </div>
+          <div className="bg-white grid grid-cols-2 mt-4 rounded-lg gap-4 flex-1">
+            {eventDetails.map((eventDetail) => (
+              <EventCard
+                key={eventDetail.id}
+                image={eventDetail.image}
+                time={eventDetail.time}
+                location={eventDetail.location}
+                pText={eventDetail.pText}
+              />
+            ))}
           </div>
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center mt-8 md:hidden">
           <button className="bg-green-700 text-white text-sm px-6 py-2 mt-4 rounded-sm">
             Discover now
           </button>

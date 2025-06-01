@@ -1,6 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar.jsx";
-import Main from "./components/Main.jsx";
+import Main from "./components/MainSection.jsx";
 import About from "./components/About.jsx";
 import Services from "./components/Services.jsx";
 import Causes from "./components/Causes.jsx";
@@ -14,7 +14,10 @@ function App() {
     <>
       <NavBar />
 
-      <div className="min-h-screen lg:px-10">
+      <div 
+      className="min-h-screen container max-w-7xl mx-auto"
+      // className="min-h-screen container mx-auto"
+      >
         <Main />
         <About />
         <Services />
@@ -24,6 +27,7 @@ function App() {
         <Faqs />
         <Footer />
       </div>
+      {/* <Footer /> */}
     </>
   );
 }

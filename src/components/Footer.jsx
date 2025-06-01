@@ -8,15 +8,15 @@ import FacebookIcon from "../assets/icons/facebook.png";
 export default function Footer() {
   return (
     <>
-      <footer>
+      <footer className="">
         <Subscribe />
 
         <div className="bg-gray-800 text-white px-8 py-8">
-          <div className="flex flex-col  md:flex-row md:justify-around md:items-stretch">
+          <div className="flex flex-col  md:flex-row md:justify-between md:items-stretch lg:justify-around">
             <div className="py-4">
               <h3 className="text-xl font-bold mb-4">WeGive</h3>
 
-              <p className="text-sm md:max-w-44">
+              <p className="text-sm md:max-w-60">
                 We are a nonprofit organization dedicated to changing lives
                 through compassion and generosity. Every donation helps us
                 provide food, education, healthcare, and hope to those in need.
@@ -95,7 +95,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="py-8 px-4 flex flex-col gap-4 md:flex-row md:justify-between md:items-center">
+          <div className="py-8 flex flex-col gap-4 md:flex-row md:justify-between md:items-center lg:justify-around">
             <div className="text-lg">trilCodes &copy; {new Date().getFullYear()} WeGive</div>
 
             <div className="flex items-center gap-4">

@@ -2,8 +2,8 @@ export default function Subscribe() {
   return (
     <>
       <section>
-        <div className="px-4 py-6 text-center">
-          <h2>Subscribe to our Newsletter</h2>
+        <div className="bg-black text-white px-4 py-6 text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl md:text-4xl text-white font-bold">Subscribe to our Newsletter</h2>
 
           <p className="py-4">
             Stay connected with our mission, get updates on our latest
@@ -23,7 +23,7 @@ export default function Subscribe() {
                 value="Subscribe Now"
                 className="bg-green-800 text-white p-4 w-[35%] h-12 text-sm rounded-sm text-smtext-center"
               /> */}
-              <button className="bg-green-800 text-white text-xs p-3 rounded-sm">Subscribe</button>
+              <button className="bg-green-800 text-white text-xs p-3 rounded-sm cursor-pointer">Subscribe</button>
             </div>
           </form>
         </div>
